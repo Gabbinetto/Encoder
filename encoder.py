@@ -4,9 +4,9 @@ chars = "abcdefghijklmnopqrstuvwxyz1234567890àèìòù,.-_:;ç@#[]()=/&%$£!?^<
 
 switches = "(àx][7>s%#w1ir'k$oqò3*gndìhav^b?lj5=c,6£/0@muyù&8eè§-2ç9)4<:t._;fp!z "
 
-# code = input("Input code:")
-
 def encode():
+    #Function to encode
+    #words into the text in the guy
     result = ""
 
     f = text_box.value.lower()
@@ -19,6 +19,7 @@ def encode():
     else: text.value = result
 
 def decode():
+    #Same as encode() but it decodes
     result = ""
 
     f = text_box.value.lower()
@@ -29,7 +30,7 @@ def decode():
         text.value = result.upper()
     else: text.value = result
 
-
+#GUI
 app = App(title="Encoder", bg="#000000", layout="grid", width=400, height=130)
 
 text_box = TextBox(app, grid=[0,0], width=32)
