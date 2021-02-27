@@ -1,2 +1,2 @@
 # Encoder
-Simply encodes sentences based on a series of characters.
+Simply encodes or decodes sentences based on a series of characters.
